@@ -185,13 +185,20 @@ header p {
 .exercise li {
     margin-bottom: 5px;
     position: relative;
+    padding-left: 15px;
 }
 
 .exercise li:before {
-    content: '\u2022';
+    content: '•';
     color: #3498db;
     position: absolute;
-    left: -15px;
+    left: 0;
+    font-size: 16px;
+}
+
+/* Fix for the u2022 rendering issue */
+.exercise li u2022 {
+    display: none;
 }
 
 .log-workout-btn {
